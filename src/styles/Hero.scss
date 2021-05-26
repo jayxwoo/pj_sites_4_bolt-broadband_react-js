@@ -1,0 +1,86 @@
+@import "./App.scss";
+
+.hero {
+  width: 100%;
+  height: 80vh;
+
+  &.light {
+    background: white;
+  }
+
+  &.dark {
+    background: $darkergrey;
+  }
+
+  .hero-cont {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+
+    .info {
+      width: 100%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .label {
+        color: crimson;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .title {
+        font-weight: 800;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+
+        &.light {
+          color: white;
+        }
+
+        &.dark {
+          color: $darkergrey;
+        }
+      }
+
+      .desc {
+        margin-bottom: 4rem;
+
+        &.light {
+          color: white;
+        }
+
+        &.dark {
+          color: $darkergrey;
+        }
+      }
+    }
+
+    .anim-cont {
+      width: 100%;
+      padding: 2rem;
+    }
+  }
+}
+
+@include mQ($mWidth--large) {
+  .hero {
+    height: calc(100vh - 80px);
+  }
+
+  .hero-cont .info {
+    height: 50%;
+    padding: 1rem;
+  }
+
+  .hero-cont .anim-cont {
+    height: 50%;
+    padding: 1rem;
+  }
+}

@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/App.scss";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Plans from "./pages/Plans";
+import Signup from "./pages/Signup";
+import { useSelector } from "react-redux";
 
 function App() {
+  const { menuBtnStatus } = useSelector((state) => state.menuBtnSlice);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className={menuBtnStatus ? "App noScroll" : "App"}>
+        <Navbar />
+        <Switch>
+          <Route exact path="/"><Home /></Route>
+          <Route path="/services"><Services /></Route>
+          <Route path="/plans"><Plans /></Route>
+          <Route path="/signup"><Signup /></Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

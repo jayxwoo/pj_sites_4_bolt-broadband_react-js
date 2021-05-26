@@ -1,0 +1,124 @@
+@import "./App.scss";
+
+// Buttons
+.btn {
+  border-radius: 0.3rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: $darkergrey;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.btn--medium {
+  padding: 0.5rem 0.6rem;
+}
+.btn--large {
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+}
+.btn--mobile {
+  width: 80%;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+.btn-primary--light {
+  border: 1px solid $bglightgrey;
+  background: $bglightgrey;
+  color: $darkergrey;
+  
+  &:hover {
+    border: 1px solid $bglightgrey;
+    background: fade-out($bglightgrey, 0.25);
+  }
+}
+.btn-primary--dark {
+  border: 1px solid $darkergrey;
+  background: $darkergrey;
+  color: $bglightgrey;
+
+  &:hover {
+    border: 1px solid $darkergrey;
+    background: fade-out($darkergrey, 0.25);
+  }
+}
+.btn-primary--blue {
+  border: 1px solid $blue;
+  background: $blue;
+  color: $bglightgrey;
+  
+  &:hover {
+    border: 1px solid $blue;
+    background: fade-out($blue, 0.25);
+  }
+}
+.btn-primary--red {
+  border: 1px solid $red;
+  background: $red;
+  color: $bglightgrey;
+
+  &:hover {
+    border: 1px solid $red;
+    background: fade-out($red, 0.25);
+  }
+}
+.btn-primary--yellow {
+  border: 1px solid $yellow;
+  background: $yellow;
+  color: $bglightgrey;
+
+  &:hover {
+    border: 1px solid $yellow;
+    background: fade-out($yellow, 0.25);
+  }
+}
+.btn-outline--light {
+  border: 1px solid $bglightgrey;
+  background: transparent;
+  color: $bglightgrey;
+
+  &:hover {
+    border: 1px solid $bglightgrey;
+    background: fade-out($bglightgrey, 0.75);
+  }
+}
+.btn-outline--dark {
+  border: 1px solid $darkergrey;
+  background: transparent;
+  color: $darkergrey;
+
+  &:hover {
+    border: 1px solid $darkergrey;
+    background: fade-out($darkergrey, 0.75);
+  }
+}
+.btn-outline--blue {
+  border: 1px solid $blue;
+  background: transparent;
+  color: $blue;
+
+  &:hover {
+    border: 1px solid $blue;
+    background: fade-out($blue, 0.75);
+  }
+}
+.btn-outline--red {
+  border: 1px solid $red;
+  background: transparent;
+  color: $red;
+
+  &:hover {
+    border: 1px solid $red;
+    background: fade-out($red, 0.75);
+  }
+}
+.btn-outline--yellow {
+  border: 1px solid $yellow;
+  background: transparent;
+  color: $yellow;
+
+  &:hover {
+    border: 1px solid $yellow;
+    background: fade-out($yellow, 0.75);
+  }
+}

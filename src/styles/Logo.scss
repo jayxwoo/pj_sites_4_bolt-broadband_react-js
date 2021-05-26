@@ -1,0 +1,20 @@
+@import "./App.scss";
+
+// Logo
+.logo {
+  display: inline-flex;
+  font-size: 1.5rem;
+  font-weight: 800;
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    color: $darkergrey;
+    text-decoration: none;
+  }
+
+  .logo-icon {
+    color: goldenrod;
+    margin-right: 0.1rem;
+  }
+}
