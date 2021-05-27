@@ -1,0 +1,79 @@
+@import "./App.scss";
+
+.pricingCard {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: $darkergrey;
+  color: white;
+
+  &.pricingCard:not(:last-of-type) {
+    margin-right: 2rem;
+  }
+
+  &.popular {
+    background: $yellow;
+  }
+
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .plan {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .price {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+  }
+
+  .plusIcon {
+    margin-bottom: 1.5rem;
+  }
+
+  .img {
+    border-radius: 0.5rem;
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  .info-group {
+    list-style: disc;
+    margin-bottom: 3rem;
+
+    .text {
+      font-size: 0.9rem;
+      text-align: left;
+      list-style-position: outside;
+    }
+  }
+}
+
+@include mQ($mWidth--large) {
+  .pricingCard {
+    align-items: center;
+    max-width: unset;
+
+    &.pricingCard:not(:last-of-type) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    .link {
+      align-self: stretch;
+    }
+  }
+}

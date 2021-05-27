@@ -1,5 +1,6 @@
 import { pricings } from "../data/pricingData";
-import PricingItem from "./PricingItem";
+import PricingCard from "./PricingCard";
+import "../styles/Pricing.scss";
 
 const Pricing = () => {
     return (
@@ -7,7 +8,7 @@ const Pricing = () => {
             <div className="pricing-cont">
                 {pricings.map((pricing) => {
                     return (
-                        <PricingItem data={pricing} key={pricing.id} />
+                        <PricingCard data={pricing} key={pricing.id} />
                     )
                 })}
             </div>
