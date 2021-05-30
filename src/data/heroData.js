@@ -38,7 +38,7 @@ export const hero_security = {
     btnStyle: { blue: "btn-outline--blue", red: "btn-outline--red", yellow: "btn-outline--yellow" },
     btnSize: { large: "btn--large", mobile: "btn--mobile" },
     imgPos: "left",
-    lightBg: true,
+    lightBg: false,
     link: "/signup",
 };
 
@@ -51,6 +51,6 @@ export const hero_chatbot = {
     btnStyle: { blue: "btn-outline--blue", red: "btn-outline--red", yellow: "btn-outline--yellow" },
     btnSize: { large: "btn--large", mobile: "btn--mobile" },
     imgPos: "right",
-    lightBg: false,
+    lightBg: true,
     link: "/signup",
 };

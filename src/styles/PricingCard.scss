@@ -10,6 +10,7 @@
   padding: 2rem;
   background: $darkergrey;
   color: white;
+  transition: all 0.3s ease-in-out;
 
   &.pricingCard:not(:last-of-type) {
     margin-right: 2rem;
@@ -17,6 +18,10 @@
 
   &.popular {
     background: $yellow;
+  }
+
+  &:hover {
+      transform: rotate(2deg);
   }
 
   .icon {
@@ -58,7 +63,7 @@
   }
 }
 
-@include mQ($mWidth--large) {
+@include mQ($width--l) {
   .pricingCard {
     align-items: center;
     max-width: unset;

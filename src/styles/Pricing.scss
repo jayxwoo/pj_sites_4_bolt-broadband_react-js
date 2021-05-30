@@ -14,7 +14,7 @@
     }
 }
 
-@include mQ($mWidth--large) {
+@include mQ($width--l) {
     .pricing-cont {
         flex-direction: column;
         align-items: center;

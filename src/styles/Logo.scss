@@ -11,6 +11,10 @@
     align-items: center;
     color: $darkergrey;
     text-decoration: none;
+
+    &.light {
+      color: white;
+    }
   }
 
   .logo-icon {

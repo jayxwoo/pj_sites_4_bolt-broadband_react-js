@@ -10,13 +10,13 @@ $red: tomato;
 $yellow: goldenrod;
 
 // Media Query Widths
-$mWidth--small: 400px;
-$mWidth--medium: 600px;
-$mWidth--large: 750px;
+$width--s: 400px;
+$width--m: 600px;
+$width--l: 750px;
 
 // Mixins
-@mixin mQ($mWidth) {
-    @media only screen and (max-width: $mWidth) {
+@mixin mQ($width) {
+    @media only screen and (max-width: $width) {
         @content;
     }
 }
@@ -24,8 +24,7 @@ $mWidth--large: 750px;
 .App {
     color: $black;
 
-    &.noScroll {
-        height: 100vh;
-        overflow-y: hidden;
-    }
+    // &.noScroll {
+    //     position: fixed;
+    // }
 }

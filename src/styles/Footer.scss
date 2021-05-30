@@ -1,0 +1,146 @@
+@import "./App.scss";
+
+.footer {
+  width: 100%;
+  background: $darkergrey;
+  color: white;
+
+  .footer-cont {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    .top {
+      text-align: center;
+      padding: 1.5rem 0;
+
+      .title {
+        
+      }
+
+      .text {
+        font-size: 0.9rem;
+        font-style: italic;
+        margin: 1rem 0;
+      }
+
+      .form {
+        display: flex;
+        justify-content: center;
+
+        .input {
+          border: none;
+          flex-grow: 1;
+          max-width: 250px;
+          border-radius: 0.2rem;
+          padding: 0.5rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .middle {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      padding: 1.5rem 0;
+      
+      .middle-cont {
+          width: 100%;
+          display: flex;
+
+          .links-cont {
+              width: 100%;
+              text-align: center;
+              padding: 1rem 0;
+
+              .links-item {
+                  margin: 0.75rem 0;
+              }
+
+              .links-link {
+                  text-decoration: none;
+                  color: white;
+                  font-size: 0.9rem;
+
+                  &:hover {
+                      color: $yellow;
+                      font-weight: bold;
+                  }
+              }
+          }
+      }
+    }
+
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 0;
+
+      .social-cont {
+          display: flex;
+
+          .icon {
+              font-size: 1.5rem;
+              cursor: pointer;
+
+              &:not(:last-of-type) {
+                  margin-right: 1rem;
+              }
+
+              &:hover {
+                  color: $yellow;
+              }
+          }
+      }
+    }
+  }
+}
+
+@include mQ($width--l) {
+  .footer .footer-cont {
+    .top {
+      .form {
+        justify-content: unset;
+        flex-direction: column;
+        align-items: center;
+
+        .input {
+          flex-grow: unset;
+          max-width: unset;
+          width: 80%;
+          margin-right: unset;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .middle {
+        max-width: 400px;
+
+        .middle-cont {
+            flex-direction: column;
+
+            .links-cont .title {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .bottom {
+        flex-direction: column;
+
+        .logo {
+            margin-bottom: 1rem;
+        }
+
+        .copyrights {
+            margin-bottom: 1rem;
+        }
+
+    }
+  }
+}

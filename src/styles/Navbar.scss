@@ -89,7 +89,7 @@
   }
 }
 
-@include mQ($mWidth--large) {
+@include mQ($width--l) {
   // Menu
   .header__menu {
     flex-direction: column;

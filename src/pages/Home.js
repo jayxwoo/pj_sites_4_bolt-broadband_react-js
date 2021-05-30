@@ -11,7 +11,11 @@ const Home = () => {
 
     useEffect(() => {
         dispatch(closeMenuBtn());
-    }, [dispatch])
+    }, [dispatch]);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="home">

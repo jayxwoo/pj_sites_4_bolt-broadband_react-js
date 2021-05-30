@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import { MdMenu, MdClose } from "react-icons/md";
-import { checkIsMobile } from "../redux/isMobileSlice";
 import { handleMenuBtn, closeMenuBtn } from "../redux/menuBtnSlice";
 import Logo from "./Logo";
 import Button from "./Button";
@@ -15,16 +14,8 @@ const Navbar = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(checkIsMobile());
-    }, [dispatch]);
-
-    useEffect(() => {
         dispatch(closeMenuBtn());
     }, [dispatch, mobile]);
-
-    window.addEventListener('resize', () => {
-        dispatch(checkIsMobile());
-    });
 
     window.addEventListener('scroll', function () {
         if (window.pageYOffset >= 5) {

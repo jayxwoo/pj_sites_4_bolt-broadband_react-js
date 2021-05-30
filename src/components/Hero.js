@@ -1,8 +1,7 @@
 import Button from "./Button";
 import lottie from "lottie-web"
 import { useEffect, useRef } from "react";
-import { checkIsMobile } from "../redux/isMobileSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import "../styles/Hero.scss";
 import { Link } from "react-router-dom";
 
@@ -12,15 +11,6 @@ const Hero = ({ data }) => {
     const animItem = useRef();
     const heroContRef = useRef();
     const { mobile } = useSelector((state) => state.isMobileSlice);
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        dispatch(checkIsMobile());
-    }, [dispatch]);
-
-    window.addEventListener('resize', () => {
-        dispatch(checkIsMobile());
-    });
 
     // Animation
     useEffect(() => {

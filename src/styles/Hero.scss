@@ -69,7 +69,7 @@
   }
 }
 
-@include mQ($mWidth--large) {
+@include mQ($width--l) {
   .hero {
     height: calc(100vh - 80px);
   }
