@@ -4,6 +4,8 @@ import { closeMenuBtn } from "../redux/menuBtnSlice";
 import { hero_security } from ".././data/heroData";
 import Hero from "../components/Hero";
 import Pricing from "../components/Pricing";
+import SubHeader from "../components/SubHeader";
+import { subHeaders } from "../data/subHeaderData";
 
 const Plans = () => {
     const dispatch = useDispatch();
@@ -18,6 +20,7 @@ const Plans = () => {
 
     return (
         <div className="plans">
+            <SubHeader data={ subHeaders.plans } />
             <div className="plans-cont">
                 <Hero data={hero_security} />
                 <Pricing />

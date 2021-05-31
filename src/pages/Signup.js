@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import { closeMenuBtn } from "../redux/menuBtnSlice";
 import SignupForm from "../components/SignupForm";
 import "../styles/Signup.scss";
+import { subHeaders } from "../data/subHeaderData";
+import SubHeader from "../components/SubHeader";
 
 const Signup = () => {
     const dispatch = useDispatch();
@@ -17,6 +19,7 @@ const Signup = () => {
 
     return (
         <div className="signup">
+            <SubHeader data={subHeaders.signup} />
             <div className="signup-cont">
                 <SignupForm />
             </div>
