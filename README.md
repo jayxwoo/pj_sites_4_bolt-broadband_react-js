@@ -29,7 +29,7 @@
 
 - Navbar
 
-  → Glassmorphism effect on scroll
+  → Glassmorphism effect on scroll (backdrop-filter is not supported by firefox)
 
 - Animation
 
