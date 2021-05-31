@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { closeMenuBtn } from "../redux/menuBtnSlice";
+import SignupForm from "../components/SignupForm";
+import "../styles/Signup.scss";
 
 const Signup = () => {
     const dispatch = useDispatch();
@@ -16,10 +18,10 @@ const Signup = () => {
     return (
         <div className="signup">
             <div className="signup-cont">
-                <h1>Sign Up</h1>
+                <SignupForm />
             </div>
         </div>
     );
 }
- 
+
 export default Signup;

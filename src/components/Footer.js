@@ -72,7 +72,7 @@ const Footer = () => {
                 </div>
                 <div className="bottom">
                     <Logo light={true} />
-                    <small className="copyrights">EasyPay © 2021</small>
+                    <small className="copyrights">Bolt Ltd. © 2021</small>
                     <div className="social-cont">
                         <FaFacebook className="icon" />
                         <FaInstagram className="icon" />

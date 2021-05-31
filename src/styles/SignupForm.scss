@@ -1,0 +1,92 @@
+@import "./App.scss";
+
+.signup-form {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  background: $darkergrey;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  padding: 2rem 1rem;
+
+  .title {
+    text-transform: uppercase;
+  }
+
+  .required {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 0.2rem;
+      font-size: 1rem;
+
+      &::placeholder {
+        font-size: 0.8rem;
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .optional {
+    border: 1px solid $grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    legend {
+      font-style: italic;
+      font-size: 0.8rem;
+    }
+
+    .cont {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      .label {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: $grey;
+        font-size: 0.8rem;
+      }
+    }
+
+    .dob-cont {
+      input {
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0.2rem;
+      }
+    }
+
+    .gender-cont {
+      input {
+        margin-right: 0.25rem;
+      }
+      label {
+        margin-right: 1rem;
+      }
+    }
+
+    .address-cont {
+      input {
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0.2rem;
+      }
+    }
+  }
+}
